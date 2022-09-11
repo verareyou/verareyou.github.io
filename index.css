@@ -9,7 +9,6 @@
 }
 
 body{
-    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +20,7 @@ body::-webkit-scrollbar {
 
 
 .header{
-    height: 100%;
+    height: 100vh;
     padding: 8vmin;
 
     margin: 0;
@@ -35,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 .inheader{
-    /* height: 100%; */
+    height: 100%;
     max-width: 1000px;
     box-sizing: border-box;
     text-align: right;
@@ -69,7 +68,7 @@ a{
     animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes opacity{
+@keyframes opacity{
     0%{
         opacity: 0;
     }
