@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon"  type="image/x-icon" href="/images/icon.png">
 </head>
-<body>
+<body id="body">
     <section class="header" id="header">
         <div class="inheader">
             <header>
@@ -38,7 +38,7 @@
         function resize()
             {
                 var heights = window.innerHeight;
-                document.getElementById("header").style.height = heights  + "px";
+                document.getElementById("body").style.height = heights  + "px";
             }
             resize();
             window.onresize = function() {
