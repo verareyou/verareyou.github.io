@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon"  type="image/x-icon" href="/images/icon.png">
 </head>
-<body id="my-element">
+<body id="left">
     <section class="header">
         <div class="inheader">
             <header>
@@ -20,7 +20,7 @@
                 </h1>
             </header>
             <nav class="nav">
-                <a href="https://www.instagram.com/hmxnsu/">Instagram.</a>
+                <a href="https://www.instagram.com/hmxnsu/">Instagram..</a>
                 <a href="https://twitter.com/verareyou">Twitter.</a>
                 <a href="https://github.com/hmnsuu">Github.</a>
                 
@@ -35,25 +35,15 @@
         </div>
     </section>
     <script>
-        // define a function that sets min-height of my-element to window.innerHeight:
-
-        const setHeight = () => {
-            document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
-        };
-
-        // define mobile screen size:
-
-        let deviceWidth = window.matchMedia("(max-width: 1024px)");
-
-        if (deviceWidth.matches) {
-        // set an event listener that detects when innerHeight changes:
-
-            window.addEventListener("resize", setHeight);
-
-        // call the function once to set initial height:
-
-            setHeight();
-        }
+        function resize()
+            {
+                var heights = window.innerHeight;
+                document.getElementById("left").style.height = heights -50 + "px";
+            }
+            resize();
+            window.onresize = function() {
+                resize();
+            };
     </script>
 </body>
 </html>
