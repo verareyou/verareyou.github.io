@@ -22,7 +22,6 @@ body::-webkit-scrollbar {
 
 .header{
     height: 100vh;
-    padding: 0;
     padding: 8vmin;
 
     margin: 0;
@@ -38,7 +37,6 @@ body::-webkit-scrollbar {
 .inheader{
     height: 100%;
     max-width: 1000px;
-    /* padding: 8vmin; */
     box-sizing: border-box;
     text-align: right;
     display: flex;
