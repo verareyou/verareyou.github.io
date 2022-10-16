@@ -48,8 +48,13 @@ body::-webkit-scrollbar {
 header h1{
     font-size: 4rem;
     font-weight: 900;
+    text-decoration: none;
+    color: #f5ffd4;
     line-height: 1.5em;
 
+}
+#instaa{
+    color: rgb(188, 249, 118);
 }
 
 nav{
@@ -58,11 +63,12 @@ nav{
 
 a{
     text-decoration: none;
+    
 
 }
 
 .span{
-    color: rgb(121, 193, 149);
+    color: rgb(195, 255, 66);
     animation-duration: 1s;
     animation-name: opacity;
     animation-iteration-count: infinite;
@@ -89,7 +95,7 @@ header h1 a{
 header h1 a:hover{
     /* color: red; */
     text-decoration: line-through;
-    text-decoration-color: rgb(121, 193, 149);
+    text-decoration-color: rgb(255, 248, 46);
     text-decoration-thickness: 15px;
     transition: 0.3s;
 }
@@ -98,7 +104,7 @@ nav a{
     display: inline-block;
     margin: 0 2vw 0 0;
     text-decoration-color: rgba(255, 255, 255, 0);
-    color: rgb(142, 142, 142);
+    color: #f5ffd4;
 
 }
 ::selection {
@@ -108,7 +114,7 @@ nav a{
 
 nav a:hover {
     text-decoration: line-through;
-    text-decoration-color: rgb(121, 193, 149);
+    text-decoration-color: rgb(178, 255, 34);
     text-decoration-thickness: 5px;
     transition: 0.3s;
 
