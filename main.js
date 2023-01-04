@@ -18,7 +18,7 @@ modebtn.addEventListener("click",() => {
   }
   else{
     mode("white")
-    fontmode("#111111")
+    fontmode("#111111");
 
   }
 })
