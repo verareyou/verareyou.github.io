@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
     background:white;
     z-index: 1;
     animation: spin 2s linear;
+    display: none;
     
 }
 @keyframes spin {
