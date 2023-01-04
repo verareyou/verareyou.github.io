@@ -12,13 +12,13 @@ const fontmode = (color) => {
 }
 
 modebtn.addEventListener("click",() => {
-  if(primary.style.background == "white"){
-    mode("#111111")
-    fontmode("white")
+  if(primary.style.background == "#111111"){
+    mode("white")
+    fontmode("#111111")
   }
   else{
-    mode("white")
-    fontmode("#111111");
+    mode("#111111")
+    fontmode("white");
 
   }
 })
