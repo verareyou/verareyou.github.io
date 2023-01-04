@@ -124,7 +124,8 @@ nav a{
 
 }
 ::selection {
-    text-shadow: none;
+    color: #111111;
+    background: red;
 }
 
 nav a:hover {
