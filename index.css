@@ -8,6 +8,8 @@
     
 }
 
+
+
 body{
     margin: 0;
     padding: 0;
@@ -19,12 +21,14 @@ body::-webkit-scrollbar {
 }
 
 
+
+
 .header{
     height: 100vh;
     padding: 8vmin;
-    background-image: url(/images/background.jpg);
+    /* background-image: url(/images/background.jpg); */
     margin: 0;
-    /* background: #111111; */
+    background: #111111;
     color: white;
     font-family: 'Space Mono', monospace;
     display: flex;
@@ -32,6 +36,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
 
 }
+
 
 .inheader{
     height: 100%;
@@ -49,12 +54,20 @@ header h1{
     font-size: 4rem;
     font-weight: 900;
     text-decoration: none;
-    color: #f5ffd4;
+    color: inherit;
     line-height: 1.5em;
 
 }
+
+marquee{
+    transform: translateY(25px);
+    /* margin-top: -1000px; */
+    margin: 0;
+    padding: 0;
+}
 #instaa{
-    color: rgb(188, 249, 118);
+    color: inherit;
+    
 }
 
 nav{
@@ -68,7 +81,8 @@ a{
 }
 
 .span{
-    color: rgb(195, 255, 66);
+    color: rgb(255, 66, 66);
+    
     animation-duration: 1s;
     animation-name: opacity;
     animation-iteration-count: infinite;
@@ -95,7 +109,7 @@ header h1 a{
 header h1 a:hover{
     /* color: red; */
     text-decoration: line-through;
-    text-decoration-color: rgb(255, 248, 46);
+    text-decoration-color: rgb(255, 46, 46);
     text-decoration-thickness: 15px;
     transition: 0.3s;
 }
@@ -104,7 +118,9 @@ nav a{
     display: inline-block;
     margin: 0 2vw 0 0;
     text-decoration-color: rgba(255, 255, 255, 0);
-    color: #f5ffd4;
+    /* color: #f5ffd4; */
+    color: inherit;
+
 
 }
 ::selection {
@@ -113,7 +129,7 @@ nav a{
 
 nav a:hover {
     text-decoration: line-through;
-    text-decoration-color: rgb(178, 255, 34);
+    text-decoration-color: rgb(255, 34, 34);
     text-decoration-thickness: 5px;
     transition: 0.3s;
 
@@ -147,6 +163,12 @@ nav a:hover {
     .header h1 {
         font-size: 2rem;
     }
+    marquee{
+        transform: translateY(11px);
+        /* margin-top: -1000px; */
+        margin: 0;
+        padding: 0;
+    }
     .inspired{
         left: 2%;
         bottom: 2%;
@@ -158,6 +180,12 @@ nav a:hover {
         flex-direction: column;
         margin: 2vw 0 50px 0;
         
+    }
+    marquee{
+        transform: translateY(8px);
+        /* margin-top: -1000px; */
+        margin: 0;
+        padding: 0;
     }
     
     nav a {
