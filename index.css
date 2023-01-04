@@ -151,7 +151,7 @@ nav a:hover {
     height: 100%;
     max-width: 1000px;
     padding: 8vmin;
-    color: rgb(121, 193, 149);
+    /* color: rgb(121, 193, 149); */
     font-size: 45px;
     box-sizing: border-box;
     text-align: right;
