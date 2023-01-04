@@ -2,6 +2,7 @@
 const primary = document.getElementById('header');
 const body = document.body;
 const modebtn = document.getElementById('modebtn');
+const modebtnspan = document.getElementById('modebtnspan');
 const fuck = document.getElementById('fuck');
 
 
@@ -29,10 +30,14 @@ modebtn.addEventListener("click",() => {
   if(primary.style.background == "white"){
     mode("#111111")
     fontmode("white")
+    modebtnspan.innerText = "Dark."
   }
   else{
     mode("white")
     fontmode("#111111")
+    modebtnspan.innerText = "Light."
 
   }
+
 })
+
