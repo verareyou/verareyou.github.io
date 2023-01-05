@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
     margin: 0;
     background: #202020;
     overflow: hidden;
-    color: #fff7e2;
+    color: beige;
     font-family: 'Space Mono', monospace;
     display: flex;
     justify-content: end;
@@ -45,27 +45,6 @@ body::-webkit-scrollbar {
 
 }
 
-.fluidbox{
-    min-height: 500%;
-    min-width: 250%;
-    transform: translate(0, -200%) rotate(45deg);
-    position: absolute;
-    border-radius: 35%;
-    background:#fff7e2;
-    z-index: 1;
-    animation: spin 2s linear;
-    display: none;
-    
-}
-@keyframes spin {
-    0%{
-        transform: translateY(-79%);
-    }
-    100%{
-
-        transform: translateY(-5000px) rotate(200deg);
-    }
-}
 
 
 .inheader{
@@ -126,7 +105,7 @@ a{
 }
 
 header h1 a{
-    color: #fff7e2;
+    color: beige;
     text-decoration-color: rgba(255, 255, 255, 0);
 
 }
@@ -167,7 +146,7 @@ nav a:hover {
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: #fff7e2;
+    background: beige;
     color: #202020;
     font-family: 'Space Mono', monospace;
     display: flex;
@@ -184,14 +163,6 @@ nav a:hover {
     text-align: right;
 }
 
-/* @media (min-width: 800px){
-    .header{
-        border-left: 50px dashed #fff7e2;
-        /* border-top: 1px solid #fff7e2; */
-        
-    /* }
-} */
-
 @media (max-width: 800px) {
     .header h1 {
         font-size: 2rem;
@@ -201,26 +172,7 @@ nav a:hover {
         left: 2%;
         bottom: 2%;
     }
-    .fluidbox{
-        min-height: 200%;
-        min-width: 200%;
-        transform: translate(0, -200%) rotate(45deg);
-        position: absolute;
-        border-radius: 37%;
-        background:#fff7e2;
-        z-index: 1;
-        animation: spin1 3s linear;
-        
-    }
-    @keyframes spin1 {
-        0%{
-            transform: translateY(-50%);
-        }
-        100%{
-    
-            transform: translateY(-4000px) rotate(360deg);
-        }
-    }
+
 }
 @media (max-width: 600px) {
     nav {
@@ -233,36 +185,13 @@ nav a:hover {
         padding-right: 12px;
         justify-content: flex-end;
         align-items: flex-end;
-        /* border-right: 3px solid #fff7e2;
-        border-top: 3px solid #fff7e2; */
-
-        
+        /* border-right: 3px solid beige;
+        border-top: 3px solid beige; */   
     }
 
     
     nav a {
         margin: 10px 0 0 0;
-    }
-
-    .fluidbox{
-        min-height: 200%;
-        min-width: 300%;
-        transform: translate(0, -200%) rotate(45deg);
-        position: absolute;
-        border-radius: 37%;
-        background:#fff7e2;
-        z-index: 1;
-        animation: spin1 2s linear;
-        
-    }
-    @keyframes spin1 {
-        0%{
-            transform: translateY(-40%);
-        }
-        100%{
-    
-            transform: translateY(-2000px) rotate(360deg);
-        }
     }
 
 }
