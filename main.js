@@ -11,7 +11,7 @@ const mode = (color) => {
   primary.style.background = `${color}`
   fluidbox.style.background = `${color}`
   if(color == "#202020"){
-    fuck.style.background = "#fff7e2"
+    fuck.style.background = "beige"
   }
   else{
     fuck.style.background = "#202020"
@@ -21,21 +21,30 @@ const mode = (color) => {
 const fontmode = (color) => {
   primary.style.color = `${color}`
   if(color == "#202020"){
-    fuck.style.color = "#fff7e2"
+    fuck.style.color = "beige"
   }
   else{
     fuck.style.color = "#202020"
   }
 }
 
+const bool = () => {
+  if(primary.style.background == "beige"){
+    return true
+  }
+  else if(primary.style.background == "#202020"){
+    return false
+  }
+}
+
 modebtn.addEventListener("click",() => {
-  if(primary.style.background == "#fff7e2"){
+  if(bool()){
     mode("#202020")
-    fontmode("#fff7e2")
+    fontmode("beige")
     modebtnspan.innerText = "dark"
   }
   else{
-    mode("#fff7e2")
+    mode("beige")
     fontmode("#202020")
     modebtnspan.innerText = "light"
 
